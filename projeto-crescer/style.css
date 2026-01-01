@@ -230,9 +230,13 @@ body {
     color: var(--text-light);
 }
 
-.hero-image {
-    display: flex;
-    justify-content: center;
+.hero-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
 }
 
 .image-placeholder {
@@ -908,4 +912,5 @@ body {
     .section-header h2 {
         font-size: 1.75rem;
     }
+
 }
