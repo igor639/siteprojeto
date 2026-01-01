@@ -47,10 +47,13 @@ window.addEventListener('scroll', () => {
 });
 
 
-// ===== FORM SUBMIT =====
+// ===== FORM SUBMIT - GOOGLE SHEETS =====
 const form = document.getElementById('cadastroForm');
 
-form.addEventListener('submit', (e) => {
+// URL do Google Apps Script
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwT7tBCqhK0hqZs3q5LaC5TAiyRUyvmOuCwjdANYWD5NNs_LxKu9UPGWJWezvGiF_0Q/exec';
+
+form.addEventListener('submit', async (e) => {
     e.preventDefault();
     
     // Pegar dados do formulário
@@ -64,44 +67,56 @@ form.addEventListener('submit', (e) => {
         return;
     }
     
-    // Aqui você pode enviar para onde quiser
-    // Por enquanto, vamos mostrar mensagem de sucesso
+    // Desabilitar botão enquanto envia
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = 'Enviando...';
+    submitBtn.disabled = true;
     
-    // Criar mensagem de sucesso
-    const successMessage = document.createElement('div');
-    successMessage.innerHTML = `
-        <div style="
-            background: #d1fae5;
-            border: 1px solid #059669;
-            border-radius: 8px;
-            padding: 24px;
-            text-align: center;
-            margin-top: 20px;
-        ">
-            <span style="font-size: 3rem;">✅</span>
-            <h3 style="color: #047857; margin: 16px 0 8px;">Pré-cadastro enviado!</h3>
-            <p style="color: #065f46;">
-                Recebemos os dados de <strong>${data.nomeJovem}</strong>.<br>
-                Entraremos em contato pelo WhatsApp <strong>${data.telefone}</strong><br>
-                em até 5 dias úteis com a senha de comparecimento.
-            </p>
-        </div>
-    `;
-    
-    // Substituir form pela mensagem
-    form.style.display = 'none';
-    form.parentElement.appendChild(successMessage);
-    
-    // Scroll suave até a mensagem
-    successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    
-    console.log('Dados do formulário:', data);
-    
-    // TODO: Enviar dados para email/WhatsApp/planilha
-    // Opções gratuitas:
-    // 1. Formspree.io (envia para email)
-    // 2. Google Apps Script (envia para Google Sheets)
-    // 3. EmailJS (envia email direto do JS)
+    try {
+        // Enviar para o Google Sheets
+        await fetch(GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+        
+        // Criar mensagem de sucesso
+        const successMessage = document.createElement('div');
+        successMessage.innerHTML = `
+            <div style="
+                background: #d1fae5;
+                border: 1px solid #059669;
+                border-radius: 8px;
+                padding: 24px;
+                text-align: center;
+                margin-top: 20px;
+            ">
+                <span style="font-size: 3rem;">✅</span>
+                <h3 style="color: #047857; margin: 16px 0 8px;">Pré-cadastro enviado!</h3>
+                <p style="color: #065f46;">
+                    Recebemos os dados de <strong>${data.nomeJovem}</strong>.<br>
+                    Entraremos em contato pelo WhatsApp <strong>${data.telefone}</strong><br>
+                    em até 5 dias úteis com a senha de comparecimento.
+                </p>
+            </div>
+        `;
+        
+        // Substituir form pela mensagem
+        form.style.display = 'none';
+        form.parentElement.appendChild(successMessage);
+        
+        // Scroll suave até a mensagem
+        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+    } catch (error) {
+        alert('Erro ao enviar. Por favor, tente novamente.');
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
 });
 
 
@@ -124,7 +139,7 @@ telefoneInput.addEventListener('input', (e) => {
 });
 
 
-// ===== ANIMAÇÃO AO SCROLL (opcional) =====
+// ===== ANIMAÇÃO AO SCROLL =====
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
