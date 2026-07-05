@@ -1,379 +1,533 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Impacto Jovem | Oportunidades para Jovens em MG</title>
-    <meta name="description" content="Projeto social gratuito que ajuda jovens de 13 a 21 anos a conquistar oportunidades no mercado de trabalho em Minas Gerais. 15 anos transformando vidas.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto Conecta Jovem | Oportunidades para Jovens em MG</title>
+  <meta
+    name="description"
+    content="Projeto social gratuito que ajuda jovens de 13 a 21 anos a conquistar oportunidades no mercado de trabalho em Minas Gerais. 15 anos transformando vidas."
+  />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
 </head>
 <body>
+  <!-- FUNDO DECORATIVO -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container">
-            <a href="#" class="logo" aria-label="Impacto Jovem">
-                <img src="assets/logo-impacto-jovem.png" alt="Logo Impacto Jovem" class="logo-img">
-            </a>
-
-            <nav class="nav" id="nav">
-                <a href="#como-funciona">Como Funciona</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#depoimentos">Depoimentos</a>
-                <a href="#faq">Dúvidas</a>
-            </nav>
-
-            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo" aria-label="Projeto Conecta Jovem">
+        <img src="assets/logo-conecta-jovem.png" alt="Logo Projeto Conecta Jovem" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-title">Projeto Conecta Jovem</span>
+          <span class="logo-subtitle">Projeto social</span>
         </div>
-    </header>
+      </a>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-bg-shape hero-shape-1"></div>
-        <div class="hero-bg-shape hero-shape-2"></div>
+      <nav class="nav" id="nav">
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
 
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-brand">
-                    <img src="assets/logo-impacto-jovem.png" alt="Impacto Jovem" class="hero-logo-main">
-                </div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
 
-                <div class="badge">✨ 100% Gratuito • Há 15 anos em MG</div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge">✨ 100% Gratuito • Há 15 anos em MG</div>
 
-                <h1>Ajudamos jovens a conquistar <span class="highlight">oportunidades no mercado de trabalho</span></h1>
+        <h1>
+          Ajudamos jovens a conquistar
+          <span class="highlight">oportunidades no mercado de trabalho</span>
+        </h1>
 
-                <p class="hero-subtitle">
-                    Projeto social que prepara jovens de 13 a 21 anos para o mercado de trabalho.
-                    Teste vocacional, treinamento para entrevistas e auxílio na busca por oportunidades na sua região.
-                </p>
+        <p class="hero-subtitle">
+          Projeto social que prepara jovens de 13 a 21 anos para o mercado de trabalho.
+          Teste vocacional, treinamento para entrevistas e auxílio na busca por oportunidades na sua região.
+        </p>
 
-                <div class="hero-buttons">
-                    <a href="#como-funciona" class="btn btn-primary">Como Funciona</a>
-                    <a href="#sobre" class="btn btn-secondary">Conhecer o Projeto</a>
-                </div>
-
-                <div class="hero-trust">
-                    <div class="trust-item">
-                        <span class="trust-number">15+</span>
-                        <span class="trust-label">Anos de atuação</span>
-                    </div>
-                    <div class="trust-item">
-                        <span class="trust-number">MG</span>
-                        <span class="trust-label">Atuação em Minas Gerais</span>
-                    </div>
-                    <div class="trust-item">
-                        <span class="trust-number">0</span>
-                        <span class="trust-label">Custo para você</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-image">
-                <div class="hero-image-frame">
-                    <img src="https://images.unsplash.com/photo-1573497019418-b400bb3ab074?w=600&h=450&fit=crop&crop=faces" alt="Jovem sorrindo no ambiente de trabalho" class="hero-img">
-                </div>
-            </div>
+        <div class="hero-buttons">
+          <a href="#como-funciona" class="btn btn-primary">Entender como funciona</a>
+          <a href="#sobre" class="btn btn-secondary">Conhecer o projeto</a>
         </div>
-    </section>
 
-    <!-- AVISO IMPORTANTE -->
-    <section class="notice">
-        <div class="container">
-            <div class="notice-box">
-                <span class="notice-icon">🔒</span>
-                <div class="notice-content">
-                    <strong>Para os pais e responsáveis:</strong>
-                    <p>Este é um projeto social de iniciativa privada, <strong>totalmente gratuito</strong>. Não cobramos nenhum valor em nenhuma etapa. Nosso único objetivo é ajudar seu filho(a) a conquistar oportunidades no mercado de trabalho.</p>
-                </div>
-            </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-number">15+</span>
+            <span class="trust-label">Anos de atuação</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-number">13–21</span>
+            <span class="trust-label">Faixa etária atendida</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-number">0</span>
+            <span class="trust-label">Custo para você</span>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- COMO FUNCIONA -->
-    <section class="como-funciona" id="como-funciona">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Passo a passo</span>
-                <h2>Como funciona o projeto?</h2>
-                <p>Um processo simples e gratuito para preparar o jovem para o mercado de trabalho</p>
+      <div class="hero-visual">
+        <div class="hero-card hero-card-main">
+          <div class="hero-card-top">
+            <span class="mini-pill">Projeto social</span>
+            <span class="mini-pill alt">Mercado de trabalho</span>
+          </div>
+
+          <div class="hero-logo-wrap">
+            <img src="assets/logo-conecta-jovem.png" alt="Logo Conecta Jovem" class="hero-logo" />
+          </div>
+
+          <div class="hero-card-info">
+            <div class="hero-info-box">
+              <strong>Teste vocacional</strong>
+              <span>Entendimento de perfil profissional</span>
             </div>
-
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-icon">📋</div>
-                    <h3>Pré-Cadastro Online</h3>
-                    <p>O responsável faz o cadastro aqui no site com os dados básicos do jovem. Após análise, enviamos uma senha para comparecimento presencial.</p>
-                    <span class="step-tag">Online</span>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-icon">🧠</div>
-                    <h3>Teste Vocacional</h3>
-                    <p>Na primeira etapa presencial, aplicamos um teste para conhecer o perfil profissional do jovem e identificar a área ideal para ele no mercado.</p>
-                    <span class="step-tag">Presencial • Não eliminatório</span>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-icon">👔</div>
-                    <h3>Treinamento</h3>
-                    <p>Preparamos o jovem com técnicas de marketing pessoal e postura para entrevistas. Essencial para causar uma boa primeira impressão.</p>
-                    <span class="step-tag">Presencial</span>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <div class="step-icon">📝</div>
-                    <h3>Avaliação</h3>
-                    <p>Aplicamos uma prova simples de conhecimentos gerais (não eliminatória) para entender melhor o nível de conhecimento do jovem.</p>
-                    <span class="step-tag">Presencial • Não eliminatório</span>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">5</div>
-                    <div class="step-icon">🎯</div>
-                    <h3>Auxílio na Busca de Oportunidades</h3>
-                    <p>Ensinamos o jovem a buscar oportunidades e se inscrever corretamente. Auxiliamos no cadastro em vagas compatíveis com seu perfil e região.</p>
-                    <span class="step-tag">Presencial</span>
-                </div>
-
-                <div class="step">
-                    <div class="step-number">6</div>
-                    <div class="step-icon">🏆</div>
-                    <h3>Resultado Vocacional</h3>
-                    <p>O jovem recebe o resultado do teste vocacional analisado por especialistas, ajudando a direcionar sua carreira profissional.</p>
-                    <span class="step-tag">Análise profissional</span>
-                </div>
+            <div class="hero-info-box">
+              <strong>Treinamento</strong>
+              <span>Preparação para entrevistas e postura</span>
             </div>
+            <div class="hero-info-box">
+              <strong>Auxílio em oportunidades</strong>
+              <span>Orientação para buscar vagas compatíveis</span>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- SOBRE / DIFERENCIAIS -->
-    <section class="sobre" id="sobre">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Por que confiar</span>
-                <h2>Um projeto sério e comprometido</h2>
-                <p>Há 15 anos trabalhando pela juventude de Minas Gerais</p>
-            </div>
-
-            <div class="diferenciais">
-                <div class="diferencial">
-                    <span class="diferencial-icon">💚</span>
-                    <h3>100% Gratuito</h3>
-                    <p>Não cobramos absolutamente nada para participar. Nenhuma taxa de inscrição ou qualquer outro valor. Do início ao fim, zero custo.</p>
-                </div>
-
-                <div class="diferencial">
-                    <span class="diferencial-icon">🏛️</span>
-                    <h3>15 Anos de História</h3>
-                    <p>Desde 2009 ajudando jovens a conquistar oportunidades no mercado de trabalho. São mais de uma década de experiência e credibilidade.</p>
-                </div>
-
-                <div class="diferencial">
-                    <span class="diferencial-icon">📍</span>
-                    <h3>Oportunidades na Sua Região</h3>
-                    <p>Auxiliamos o jovem a encontrar e se cadastrar em oportunidades próximas de casa ou da escola, facilitando o transporte e a rotina de estudos.</p>
-                </div>
-
-                <div class="diferencial">
-                    <span class="diferencial-icon">🎓</span>
-                    <h3>Sem Pré-requisitos</h3>
-                    <p>Não é necessário experiência ou cursos para realizar o cadastro. Os testes servem para conhecer o jovem, não para eliminar.</p>
-                </div>
-
-                <div class="diferencial">
-                    <span class="diferencial-icon">👨‍👩‍👧</span>
-                    <h3>Transparência Total</h3>
-                    <p>Pais e responsáveis podem acompanhar todo o processo. Temos compromisso com a clareza e honestidade.</p>
-                </div>
-
-                <div class="diferencial">
-                    <span class="diferencial-icon">🤝</span>
-                    <h3>Iniciativa Privada</h3>
-                    <p>Projeto de responsabilidade social mantido por empresa privada. Não dependemos de governo ou doações.</p>
-                </div>
-            </div>
+        <div class="floating-card floating-1">
+          <span>💼</span>
+          <div>
+            <strong>Preparação</strong>
+            <small>para o mercado</small>
+          </div>
         </div>
-    </section>
 
-    <!-- DOCUMENTOS NECESSÁRIOS -->
-    <section class="documentos">
-        <div class="container">
-            <div class="docs-box">
-                <div class="docs-content">
-                    <h2>📄 Documentos necessários</h2>
-                    <p>Para a primeira etapa presencial, traga:</p>
-                    <ul>
-                        <li>✓ Documento de identidade (RG) <strong>ou</strong> CPF do jovem</li>
-                        <li>✓ Certidão de nascimento</li>
-                        <li>✓ Comprovante de endereço atualizado</li>
-                    </ul>
-                </div>
-                <div class="docs-note">
-                    <span>💡</span>
-                    <p>O comprovante de endereço é importante para auxiliarmos o jovem a encontrar oportunidades próximas à sua residência.</p>
-                </div>
-            </div>
+        <div class="floating-card floating-2">
+          <span>🎯</span>
+          <div>
+            <strong>Orientação</strong>
+            <small>para o jovem</small>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- DEPOIMENTOS -->
-    <section class="depoimentos" id="depoimentos">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Histórias reais</span>
-                <h2>Quem já passou pelo projeto</h2>
-                <p>Veja o que jovens e famílias falam sobre a experiência</p>
-            </div>
-
-            <div class="depoimentos-grid">
-                <div class="depoimento">
-                    <div class="depoimento-content">
-                        <p>"Eu tinha muito medo de entrevista, não sabia nem como me apresentar. O treinamento me deu confiança e logo consegui uma oportunidade perto de casa!"</p>
-                    </div>
-                    <div class="depoimento-author">
-                        <div class="author-avatar">M</div>
-                        <div class="author-info">
-                            <strong>Maria, 17 anos</strong>
-                            <span>Jovem Aprendiz - Comércio</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="depoimento">
-                    <div class="depoimento-content">
-                        <p>"Confesso que no início desconfiei, achei que era golpe. Mas acompanhei meu filho em todo processo e fiquei impressionada com a seriedade. Recomendo!"</p>
-                    </div>
-                    <div class="depoimento-author">
-                        <div class="author-avatar">S</div>
-                        <div class="author-info">
-                            <strong>Sandra</strong>
-                            <span>Mãe de participante</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="depoimento">
-                    <div class="depoimento-content">
-                        <p>"O teste vocacional foi muito importante. Descobri que tenho perfil pra área administrativa e hoje estou trabalhando no que gosto. Valeu demais!"</p>
-                    </div>
-                    <div class="depoimento-author">
-                        <div class="author-avatar">L</div>
-                        <div class="author-info">
-                            <strong>Lucas, 16 anos</strong>
-                            <span>Jovem Aprendiz - Escritório</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- AVISO IMPORTANTE -->
+  <section class="notice">
+    <div class="container">
+      <div class="notice-box">
+        <span class="notice-icon">🔒</span>
+        <div class="notice-content">
+          <strong>Para os pais e responsáveis:</strong>
+          <p>
+            Este é um projeto social de iniciativa privada,
+            <strong>totalmente gratuito</strong>. Não cobramos nenhum valor em nenhuma etapa.
+            Nosso único objetivo é ajudar seu filho(a) a conquistar oportunidades no mercado de trabalho.
+          </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- FAQ -->
-    <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-badge">Tire suas dúvidas</span>
-                <h2>Perguntas frequentes</h2>
-            </div>
+  <!-- COMO FUNCIONA -->
+  <section class="como-funciona" id="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Passo a passo</span>
+        <h2>Como funciona o projeto?</h2>
+        <p>Um processo simples e gratuito para preparar o jovem para o mercado de trabalho</p>
+      </div>
 
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        É realmente gratuito? Não vão cobrar nada depois?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Sim, é 100% gratuito do início ao fim. Não cobramos taxa de inscrição ou qualquer outro valor. Nunca. O projeto é mantido por iniciativa privada como ação de responsabilidade social.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Qual a idade para participar?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Cadastramos jovens de 13 a 21 anos. Para menores de 18 anos, é necessário autorização do responsável.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Precisa ter experiência ou cursos?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Não! Não é necessário experiência ou cursos para realizar o cadastro. Nosso foco é justamente ajudar quem está buscando a primeira oportunidade no mercado de trabalho. É pra isso que existimos.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        A prova é eliminatória?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Não. Nem a prova nem o teste vocacional são eliminatórios. Eles servem para conhecermos melhor o perfil do jovem e direcionarmos para as melhores oportunidades.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Vocês garantem uma oportunidade?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Não garantimos, mas preparamos o jovem e auxiliamos na busca por oportunidades compatíveis com seu perfil. Ensinamos como buscar vagas e se inscrever corretamente no mercado de trabalho.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        Os pais podem acompanhar?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Sim! Inclusive incentivamos que os pais ou responsáveis acompanhem as etapas iniciais para conhecerem nosso trabalho e tirarem todas as dúvidas pessoalmente.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <div class="step-icon">📋</div>
+          <h3>Pré-Cadastro Online</h3>
+          <p>
+            O responsável faz o cadastro aqui no site com os dados básicos do jovem.
+            Após análise, enviamos uma senha para comparecimento presencial.
+          </p>
+          <span class="step-tag">Online</span>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="assets/logo-impacto-jovem.png" alt="Logo Impacto Jovem" class="footer-logo-img">
-                    <p>Transformando o futuro da juventude há 15 anos.</p>
-                </div>
-
-                <div class="footer-links">
-                    <a href="#como-funciona">Como Funciona</a>
-                    <a href="#sobre">Sobre</a>
-                    <a href="#depoimentos">Depoimentos</a>
-                    <a href="#faq">Dúvidas</a>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>© 2026 Projeto Impacto Jovem. Todos os direitos reservados.</p>
-                <p>Projeto social de iniciativa privada • Minas Gerais</p>
-            </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <div class="step-icon">🧠</div>
+          <h3>Teste Vocacional</h3>
+          <p>
+            Na primeira etapa presencial, aplicamos um teste para conhecer o perfil profissional
+            do jovem e identificar a área ideal para ele no mercado.
+          </p>
+          <span class="step-tag">Presencial • Não eliminatório</span>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="step">
+          <div class="step-number">3</div>
+          <div class="step-icon">👔</div>
+          <h3>Treinamento</h3>
+          <p>
+            Preparamos o jovem com técnicas de marketing pessoal e postura para entrevistas.
+            Essencial para causar uma boa primeira impressão.
+          </p>
+          <span class="step-tag">Presencial</span>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <div class="step-icon">📝</div>
+          <h3>Avaliação</h3>
+          <p>
+            Aplicamos uma prova simples de conhecimentos gerais (não eliminatória)
+            para entender melhor o nível de conhecimento do jovem.
+          </p>
+          <span class="step-tag">Presencial • Não eliminatório</span>
+        </div>
+
+        <div class="step">
+          <div class="step-number">5</div>
+          <div class="step-icon">🎯</div>
+          <h3>Auxílio na Busca de Oportunidades</h3>
+          <p>
+            Ensinamos o jovem a buscar oportunidades e se inscrever corretamente.
+            Auxiliamos no cadastro em vagas compatíveis com seu perfil e região.
+          </p>
+          <span class="step-tag">Presencial</span>
+        </div>
+
+        <div class="step">
+          <div class="step-number">6</div>
+          <div class="step-icon">🏆</div>
+          <h3>Resultado Vocacional</h3>
+          <p>
+            O jovem recebe o resultado do teste vocacional analisado por especialistas,
+            ajudando a direcionar sua carreira profissional.
+          </p>
+          <span class="step-tag">Análise profissional</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE / DIFERENCIAIS -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Por que confiar</span>
+        <h2>Um projeto sério e comprometido</h2>
+        <p>Há 15 anos trabalhando pela juventude de Minas Gerais</p>
+      </div>
+
+      <div class="diferenciais">
+        <div class="diferencial">
+          <span class="diferencial-icon">💚</span>
+          <h3>100% Gratuito</h3>
+          <p>
+            Não cobramos absolutamente nada para participar. Nenhuma taxa de inscrição
+            ou qualquer outro valor. Do início ao fim, zero custo.
+          </p>
+        </div>
+
+        <div class="diferencial">
+          <span class="diferencial-icon">🏛️</span>
+          <h3>15 Anos de História</h3>
+          <p>
+            Desde 2009 ajudando jovens a conquistar oportunidades no mercado de trabalho.
+            São mais de uma década de experiência e credibilidade.
+          </p>
+        </div>
+
+        <div class="diferencial">
+          <span class="diferencial-icon">📍</span>
+          <h3>Oportunidades na Sua Região</h3>
+          <p>
+            Auxiliamos o jovem a encontrar e se cadastrar em oportunidades próximas de casa
+            ou da escola, facilitando o transporte e a rotina de estudos.
+          </p>
+        </div>
+
+        <div class="diferencial">
+          <span class="diferencial-icon">🎓</span>
+          <h3>Sem Pré-requisitos</h3>
+          <p>
+            Não é necessário experiência ou cursos para realizar o cadastro.
+            Os testes servem para conhecer o jovem, não para eliminar.
+          </p>
+        </div>
+
+        <div class="diferencial">
+          <span class="diferencial-icon">👨‍👩‍👧</span>
+          <h3>Transparência Total</h3>
+          <p>
+            Pais e responsáveis podem acompanhar todo o processo.
+            Temos compromisso com a clareza e honestidade.
+          </p>
+        </div>
+
+        <div class="diferencial">
+          <span class="diferencial-icon">🤝</span>
+          <h3>Iniciativa Privada</h3>
+          <p>
+            Projeto de responsabilidade social mantido por empresa privada.
+            Não dependemos de governo ou doações.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCUMENTOS NECESSÁRIOS -->
+  <section class="documentos">
+    <div class="container">
+      <div class="docs-box">
+        <div class="docs-content">
+          <h2>📄 Documentos necessários</h2>
+          <p>Para a primeira etapa presencial, traga:</p>
+          <ul>
+            <li>✓ Documento de identidade (RG) <strong>ou</strong> CPF do jovem</li>
+            <li>✓ Certidão de nascimento</li>
+            <li>✓ Comprovante de endereço atualizado</li>
+          </ul>
+        </div>
+
+        <div class="docs-note">
+          <span>💡</span>
+          <p>
+            O comprovante de endereço é importante para auxiliarmos o jovem a encontrar
+            oportunidades próximas à sua residência.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Histórias reais</span>
+        <h2>Quem já passou pelo projeto</h2>
+        <p>Veja o que jovens e famílias falam sobre a experiência</p>
+      </div>
+
+      <div class="depoimentos-grid">
+        <div class="depoimento">
+          <div class="depoimento-content">
+            <p>
+              "Eu tinha muito medo de entrevista, não sabia nem como me apresentar.
+              O treinamento me deu confiança e logo consegui uma oportunidade perto de casa!"
+            </p>
+          </div>
+          <div class="depoimento-author">
+            <div class="author-avatar">M</div>
+            <div class="author-info">
+              <strong>Maria, 17 anos</strong>
+              <span>Jovem Aprendiz - Comércio</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="depoimento">
+          <div class="depoimento-content">
+            <p>
+              "Confesso que no início desconfiei, achei que era golpe. Mas acompanhei meu filho
+              em todo processo e fiquei impressionada com a seriedade. Recomendo!"
+            </p>
+          </div>
+          <div class="depoimento-author">
+            <div class="author-avatar">S</div>
+            <div class="author-info">
+              <strong>Sandra</strong>
+              <span>Mãe de participante</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="depoimento">
+          <div class="depoimento-content">
+            <p>
+              "O teste vocacional foi muito importante. Descobri que tenho perfil pra área
+              administrativa e hoje estou trabalhando no que gosto. Valeu demais!"
+            </p>
+          </div>
+          <div class="depoimento-author">
+            <div class="author-avatar">L</div>
+            <div class="author-info">
+              <strong>Lucas, 16 anos</strong>
+              <span>Jovem Aprendiz - Escritório</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Tire suas dúvidas</span>
+        <h2>Perguntas frequentes</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            É realmente gratuito? Não vão cobrar nada depois?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sim, é 100% gratuito do início ao fim. Não cobramos taxa de inscrição
+              ou qualquer outro valor. Nunca. O projeto é mantido por iniciativa privada
+              como ação de responsabilidade social.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Qual a idade para participar?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Cadastramos jovens de 13 a 21 anos. Para menores de 18 anos,
+              é necessário autorização do responsável.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Precisa ter experiência ou cursos?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Não! Não é necessário experiência ou cursos para realizar o cadastro.
+              Nosso foco é justamente ajudar quem está buscando a primeira oportunidade
+              no mercado de trabalho. É pra isso que existimos.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            A prova é eliminatória?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Não. Nem a prova nem o teste vocacional são eliminatórios.
+              Eles servem para conhecermos melhor o perfil do jovem e direcionarmos
+              para as melhores oportunidades.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Vocês garantem uma oportunidade?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Não garantimos, mas preparamos o jovem e auxiliamos na busca por
+              oportunidades compatíveis com seu perfil. Ensinamos como buscar vagas
+              e se inscrever corretamente no mercado de trabalho.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Os pais podem acompanhar?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Sim! Inclusive incentivamos que os pais ou responsáveis acompanhem
+              as etapas iniciais para conhecerem nosso trabalho e tirarem todas as dúvidas pessoalmente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <div class="container">
+      <div class="cta-box">
+        <div class="cta-text">
+          <span class="section-badge">Conecta Jovem</span>
+          <h2>Um projeto gratuito voltado à preparação e orientação de jovens</h2>
+          <p>
+            O Projeto Conecta Jovem atua na preparação do jovem para o mercado de trabalho,
+            com foco em orientação, treinamento e apoio na busca por oportunidades compatíveis com seu perfil.
+          </p>
+        </div>
+
+        <div class="cta-card">
+          <div class="cta-card-icon">🌱</div>
+          <h3>Compromisso com seriedade e transparência</h3>
+          <p>
+            Projeto social de iniciativa privada, com atendimento gratuito e foco no desenvolvimento da juventude.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo-line">
+            <img src="assets/logo-conecta-jovem.png" alt="Logo Projeto Conecta Jovem" class="footer-logo-img" />
+            <div>
+              <strong>Projeto Conecta Jovem</strong>
+              <p>Transformando o futuro da juventude há 15 anos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#como-funciona">Como Funciona</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#depoimentos">Depoimentos</a>
+          <a href="#faq">Dúvidas</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Projeto Conecta Jovem. Todos os direitos reservados.</p>
+        <p>Projeto social de iniciativa privada • Minas Gerais</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
